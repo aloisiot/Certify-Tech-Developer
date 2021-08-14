@@ -27,7 +27,7 @@ public class NPrimeirosPrimos {
     // Avalia se um número é primo ou não.
     static boolean numeroPrimo (int number){
         if(number == 1 || number == 0){return false;}
-        for (int i = 2; i<number; i++){
+        for (int i = 1; i<number; i+=2){
             if(divisivel(number, i)){
                 return false;
             }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad24566d-da12-458e-99c0-ae6bbd331a85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/introducao/out/production/introducao/NPrimeirosPrimos/NPrimeirosPrimos.class" beforeDir="false" afterPath="$PROJECT_DIR$/introducao/out/production/introducao/NPrimeirosPrimos/NPrimeirosPrimos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introducao/src/NPrimeirosPrimos/NPrimeirosPrimos.java" beforeDir="false" afterPath="$PROJECT_DIR$/introducao/src/NPrimeirosPrimos/NPrimeirosPrimos.java" afterDir="false" />
-    </list>
+    <list default="true" id="ad24566d-da12-458e-99c0-ae6bbd331a85" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,5 +42,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
