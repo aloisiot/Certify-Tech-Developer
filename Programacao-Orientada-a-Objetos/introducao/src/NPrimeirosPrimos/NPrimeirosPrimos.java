@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class NPrimeirosPrimos {
 
+    // Método principal.
     public static void main(String[] args) {
         System.out.println("Digite um numero N e veja os N primeiros numeros primos");
         Scanner s = new Scanner(System.in);
@@ -13,7 +14,7 @@ public class NPrimeirosPrimos {
         System.out.println(Arrays.toString(nPrimos));
     }
 
-
+    // Avalia se o resto de uma operação de divisão é zero.
     static boolean divisivel (int dividendo, int divisor){
         if(dividendo % divisor == 0){
             return true;
@@ -23,20 +24,18 @@ public class NPrimeirosPrimos {
         }
     }
 
-
+    // Avalia se um número é primo ou não.
     static boolean numeroPrimo (int number){
-        if(number == 1){return false;}
-        boolean resultado = false;
+        if(number == 1 || number == 0){return false;}
         for (int i = 2; i<number; i++){
-            resultado = divisivel (number, i);
-            if(resultado){
+            if(divisivel(number, i)){
                 return false;
             }
         }
         return true;
     }
 
-
+    // Recebe um numero N como parâmetro e retorna uma sequencia dos N primeiros números primos.
     static int[] nPrimeirosPrimos (int n){
         int totalPrimos = 0;
         int[] primos=new int[n];
