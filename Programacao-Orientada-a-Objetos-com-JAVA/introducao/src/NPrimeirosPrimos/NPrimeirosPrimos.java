@@ -27,7 +27,7 @@ public class NPrimeirosPrimos {
     // Avalia se um número é primo ou não.
     static boolean numeroPrimo (int number){
         if(number == 1 || number == 0){return false;}
-        for (int i = 1; i<number; i+=2){
+        for (int i = 2; i<number; i++){
             if(divisivel(number, i)){
                 return false;
             }
@@ -37,9 +37,10 @@ public class NPrimeirosPrimos {
 
     // Recebe um numero N como parâmetro e retorna uma sequencia dos N primeiros números primos.
     static int[] nPrimeirosPrimos (int n){
-        int totalPrimos = 0;
         int[] primos=new int[n];
-        for (int i =1; totalPrimos < n; i++){
+        primos[0]=2;
+        int totalPrimos = 1;
+        for (int i = 1; totalPrimos < n; i+=2){
             if(numeroPrimo(i)){
                 primos[totalPrimos]=i;
                 totalPrimos++;
