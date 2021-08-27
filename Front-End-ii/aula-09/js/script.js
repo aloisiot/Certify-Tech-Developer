@@ -57,7 +57,8 @@ submitButton.addEventListener('click',(event)=>{
     
     event.preventDefault();
     
-    const p0 = document.querySelector('#alert-is-empity');
+    const p0 = document.querySelector('#is-empity-alert');
+
     let p = document.createElement('p');
     p.id='alert-is-empity'
     p.innerHTML= 'Preencha os campos para continuar'
