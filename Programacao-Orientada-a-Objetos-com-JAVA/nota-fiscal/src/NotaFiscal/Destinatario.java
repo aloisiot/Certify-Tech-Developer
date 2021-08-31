@@ -1,7 +1,5 @@
 package NotaFiscal;
 
-import java.util.Date;
-
 public class Destinatario extends Pessoa {
     private Endereco endereco;
     private int inscricaoEstadual;
