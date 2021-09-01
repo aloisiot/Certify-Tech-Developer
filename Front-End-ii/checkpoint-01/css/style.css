@@ -17,7 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #02020280;
-  background-image: url("../assets/img/mustang.jpg");
+  background-image: url("../assets/img/laranjas.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,27 +25,27 @@ body {
 
 form {
   border-radius: 8px;
-  background-color: rgba(2, 2, 2, 0.8);
-  padding: 32px;
+  background-color: rgba(2, 2, 2, 0.9);
+  padding: 48px;
   max-width: 80%;
   animation: showElement 0.2s 0.3s ease-in both;
 }
 form h1 {
   margin-bottom: 24px;
-  color: #ddd;
+  color: #bbb;
   padding-bottom: 8px;
   text-align: center;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   border-bottom: #ddd4 1px solid;
 }
 form input {
-  background-color: #020202;
+  background-color: #000;
   height: 48px;
   border: none;
   width: 100%;
   border-radius: 8px;
-  color: #ddd;
+  color: #bbb;
   text-align: center;
   outline: none;
   border: #DE5E06 solid 2px;
@@ -54,7 +54,7 @@ form input:focus {
   border: #DE5E06 solid 3px;
 }
 form input::placeholder {
-  color: #ddd;
+  color: #bbb;
   text-align: center;
 }
 form button {
@@ -62,19 +62,20 @@ form button {
   margin-top: 24px;
   width: 100%;
   border: none;
-  background-color: rgba(222, 94, 6, 0.9);
-  color: #ddd;
+  background-color: rgba(222, 94, 6, 0.8);
+  color: #bbb;
   border-radius: 8px;
   height: 48px;
   font-size: 16px;
   font-weight: 600;
 }
 form button:hover {
-  background-color: #de5e06;
+  background-color: rgba(222, 94, 6, 0.9);
 }
 form button:active {
   font-weight: 500;
   box-shadow: inset 0 0 8px black;
+  background-color: rgba(222, 94, 6, 0.9);
 }
 
 /*# sourceMappingURL=style.css.map */

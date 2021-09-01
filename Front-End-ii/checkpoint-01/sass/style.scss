@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
 @import url("./animate.css");
 
-$font-color: #ddd; 
+$font-color: #bbb; 
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #02020280;
-    background-image: url('../assets/img/mustang.jpg');
+    background-image: url('../assets/img/laranjas.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,8 +28,8 @@ body{
 
 form{
         border-radius: 8px;
-        background-color: rgba(2, 2, 2, 0.80);
-        padding: 32px;
+        background-color: rgba(2, 2, 2, 0.9);
+        padding: 48px;
         max-width: 80%;
         animation: showElement .2s .3s ease-in both;
 
@@ -39,12 +39,12 @@ form{
         padding-bottom: 8px;
         text-align: center;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 600;
         border-bottom: #ddd4 1px solid;
     }
 
     input{
-        background-color: #020202;
+        background-color: #000;
         height: 48px;
         border: none;
         width: 100%;
@@ -69,20 +69,22 @@ form{
         margin-top: 24px;
         width: 100%;
         border: none;
-        background-color: rgb(222, 94, 6, .9);
+        background-color: rgb(222, 94, 6, .8);
         color: $font-color;
         border-radius: 8px;
         height: 48px;
         font-size: 16px;
         font-weight: 600;
-
+        
         &:hover{
-            background-color: rgb(222, 94, 6);
+            background-color: rgb(222, 94, 6, .9);
         }
         
         &:active{
             font-weight: 500;
             box-shadow: inset 0 0 8px rgba(0, 0, 0);
+            background-color: rgb(222, 94, 6, .9);
+
         }
     }
 }
