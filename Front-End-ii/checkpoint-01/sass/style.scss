@@ -79,6 +79,11 @@ form{
         &:hover{
             background-color: rgb(222, 94, 6, .9);
         }
+
+        &:focus{
+            background-color: rgb(222, 94, 6, .9);
+            outline: none;
+        }
         
         &:active{
             font-weight: 500;
