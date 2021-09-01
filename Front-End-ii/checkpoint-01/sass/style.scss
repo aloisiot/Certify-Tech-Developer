@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
+@import url("./animate.css");
 
 $font-color: #ddd; 
 
@@ -9,14 +10,18 @@ $font-color: #ddd;
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
-    height: 100vh;
-    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #02020280;
     background-image: url('../assets/img/mustang.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,14 +31,16 @@ form{
         background-color: rgba(2, 2, 2, 0.80);
         padding: 32px;
         max-width: 80%;
+        animation: showElement .2s .3s ease-in both;
 
     h1{
         margin-bottom: 24px;
         color: $font-color;
+        padding-bottom: 8px;
         text-align: center;
         font-size: 2rem;
         font-weight: 400;
-        border-bottom: $font-color 1px solid;
+        border-bottom: #ddd4 1px solid;
     }
 
     input{
@@ -58,6 +65,7 @@ form{
     }
     
     button{
+        cursor: pointer;
         margin-top: 24px;
         width: 100%;
         border: none;
@@ -66,6 +74,15 @@ form{
         border-radius: 8px;
         height: 48px;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 600;
+
+        &:hover{
+            background-color: rgb(222, 94, 6);
+        }
+        
+        &:active{
+            font-weight: 500;
+            box-shadow: inset 0 0 8px rgba(0, 0, 0);
+        }
     }
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
+@import url("./animate.css");
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -6,14 +7,18 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  height: 100vh;
-  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #02020280;
   background-image: url("../assets/img/mustang.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,14 +28,16 @@ form {
   background-color: rgba(2, 2, 2, 0.8);
   padding: 32px;
   max-width: 80%;
+  animation: showElement 0.2s 0.3s ease-in both;
 }
 form h1 {
   margin-bottom: 24px;
   color: #ddd;
+  padding-bottom: 8px;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  border-bottom: #ddd 1px solid;
+  border-bottom: #ddd4 1px solid;
 }
 form input {
   background-color: #020202;
@@ -51,6 +58,7 @@ form input::placeholder {
   text-align: center;
 }
 form button {
+  cursor: pointer;
   margin-top: 24px;
   width: 100%;
   border: none;
@@ -59,7 +67,14 @@ form button {
   border-radius: 8px;
   height: 48px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
+}
+form button:hover {
+  background-color: #de5e06;
+}
+form button:active {
+  font-weight: 500;
+  box-shadow: inset 0 0 8px black;
 }
 
 /*# sourceMappingURL=style.css.map */
