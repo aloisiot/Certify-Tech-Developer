@@ -1,7 +1,5 @@
 package NotaFiscal;
 
-import java.util.Date;
-
 public class Produto {
     private Double pesoLiquido;
     private int unidades;

@@ -11,23 +11,7 @@ public class Destinatario extends Pessoa {
         this.inscricaoEstadual = inscricaoEstadual;
         this.telefone = telefone;
     }
-
-    public void setCpfCnpj(int cpfCnpj){
-        super.setCpfCnpj(cpfCnpj);
-    }
-
-    public int getCpfCnpj(){
-        return super.getCpfCnpj();
-    }
-
-    public String getNome() {
-        return super.getNome();
-    }
-
-    public void setNome(String nome) {
-        super.setNome(nome);
-    }
-
+    
     public Endereco getEndereco() {
         return endereco;
     }
