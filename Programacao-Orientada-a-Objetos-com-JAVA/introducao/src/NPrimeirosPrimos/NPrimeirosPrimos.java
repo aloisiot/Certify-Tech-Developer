@@ -1,17 +1,24 @@
 package NPrimeirosPrimos;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class NPrimeirosPrimos {
 
-    // Método principal.
+    // MAIN.
     public static void main(String[] args) {
-        System.out.println("Digite um numero N e veja os N primeiros numeros primos");
+        System.out.println("\nDigite um numero N maior que 0 (zero) e veja os N primeiros números primos");
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
-        int[] nPrimos = nPrimeirosPrimos(n);
-        System.out.println(Arrays.toString(nPrimos));
+        if( n > 0){
+            int[] nPrimos = nPrimeirosPrimos(n);
+            System.out.println(Arrays.toString(nPrimos));
+        } else {
+            System.out.println("Numero inválido");
+        }
     }
 
     // Avalia se o resto de uma operação de divisão é zero.
@@ -27,7 +34,7 @@ public class NPrimeirosPrimos {
     // Avalia se um número é primo ou não.
     static boolean numeroPrimo (int number){
         if(number == 1 || number == 0){return false;}
-        for (int i = 2; i<number; i++){
+        for(int i = 2; i<number; i++){
             if(divisivel(number, i)){
                 return false;
             }
@@ -36,13 +43,14 @@ public class NPrimeirosPrimos {
     }
 
     // Recebe um numero N como parâmetro e retorna uma sequencia dos N primeiros números primos.
-    static int[] nPrimeirosPrimos (int n){
-        int[] primos=new int[n];
-        primos[0]=2;
+    @Contract(pure = true)
+    static int @NotNull [] nPrimeirosPrimos (int n){
+        int[] primos = new int[n];
+        primos[0] = 2;
         int totalPrimos = 1;
-        for (int i = 1; totalPrimos < n; i+=2){
+        for (int i = 1; totalPrimos < n; i += 2){
             if(numeroPrimo(i)){
-                primos[totalPrimos]=i;
+                primos[totalPrimos] = i;
                 totalPrimos++;
             }
         }
