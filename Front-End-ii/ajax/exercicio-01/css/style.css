@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+h3{
+    display: inline-block;
+}
+
+div{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div > * {
+    margin: 6px 0;
+    text-align: center;
+}
+
+img{
+    width: 180px;
+    border-radius: 50%;
+}
