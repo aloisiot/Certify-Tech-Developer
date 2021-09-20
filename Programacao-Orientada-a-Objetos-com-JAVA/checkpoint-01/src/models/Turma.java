@@ -50,7 +50,8 @@ public class Turma {
         this.alunos.sort(Pessoa::compareTo);
 
         for(int i = 0; i < this.alunos.size(); i++){
-            result += String.format("%s - %s",this.alunos.get(i).getId(),
+            result += String.format("%s - %s",
+                    this.alunos.get(i).getId(),
                     this.alunos.get(i).getNome());
         }
 

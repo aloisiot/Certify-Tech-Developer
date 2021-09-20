@@ -47,7 +47,7 @@ public class Home extends JFrame  {
         cursoInformatica.setSize(100, 60);
         cursoInformatica.addActionListener( event -> {
             JOptionPane.showMessageDialog(null,
-                    String.format("Turma: %s\nProfessor: %s\nMensalidade: %s\n\nAlunos: \n",
+                    String.format("Turma: %s\nProfessor: %s\nMensalidade: %s\n\nAlunos: \n%s",
                             t[1].getNomeTurma(),
                             t[1].getProfessor().getNome(),
                             t[1].getCurso().getMensalidade(),
@@ -59,7 +59,7 @@ public class Home extends JFrame  {
         cursoIngles.setSize(100, 60);
         cursoIngles.addActionListener( event -> {
             JOptionPane.showMessageDialog(null,
-                    String.format("Turma: %s\nProfessor: %s\nMensalidade: %s\n\nAlunos: \n",
+                    String.format("Turma: %s\nProfessor: %s\nMensalidade: %s\n\nAlunos: \n%s",
                             t[2].getNomeTurma(),
                             t[2].getProfessor().getNome(),
                             t[2].getCurso().getMensalidade(),
