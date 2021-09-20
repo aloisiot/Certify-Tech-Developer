@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.2.0"
   },
   "name": "calculadora_orig",
   "version": "1.0.0",
