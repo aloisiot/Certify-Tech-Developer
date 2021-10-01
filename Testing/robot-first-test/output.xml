@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.8.10 on linux)" generated="20210930 21:12:12.029" rpa="false" schemaversion="2">
+<suite id="s1" name="MercadoLivre" source="/media/aloisiot/ctd/Certify-Tech-Developer/Testing/robot-first-test/MercadoLivre.robot">
+<test id="s1-t1" name="Mercado Livre">
+<kw name="Acessar o site do Mercado Livre">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://mercadolivre.com.br</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210930 21:12:12.136" level="INFO">Opening browser 'chrome' to base url 'http://mercadolivre.com.br'.</msg>
+<status status="PASS" starttime="20210930 21:12:12.136" endtime="20210930 21:12:19.171"/>
+</kw>
+<status status="PASS" starttime="20210930 21:12:12.135" endtime="20210930 21:12:19.172"/>
+</kw>
+<kw name="Fazer uma busca por iPhone12">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=body &gt; header &gt; div &gt; form &gt; input</arg>
+<arg>Iphone 12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210930 21:12:19.173" level="INFO">Typing text 'Iphone 12' into text field 'css=body &gt; header &gt; div &gt; form &gt; input'.</msg>
+<status status="PASS" starttime="20210930 21:12:19.173" endtime="20210930 21:12:19.276"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=body &gt; header &gt; div &gt; form &gt; button &gt; div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210930 21:12:19.277" level="INFO">Clicking element 'css=body &gt; header &gt; div &gt; form &gt; button &gt; div'.</msg>
+<status status="PASS" starttime="20210930 21:12:19.276" endtime="20210930 21:12:21.551"/>
+</kw>
+<status status="PASS" starttime="20210930 21:12:19.172" endtime="20210930 21:12:21.551"/>
+</kw>
+<kw name="Clicar no primeiro resultado">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#root-app &gt; div &gt; div &gt; section &gt; ol &gt; li:nth-child(1) &gt; div &gt; div &gt; div.ui-search-result__content-wrapper &gt; div.ui-search-item__group.ui-search-item__group--title &gt; a.ui-search-item__group__element.ui-search-link &gt; h2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210930 21:12:21.552" level="INFO">Clicking element 'css=#root-app &gt; div &gt; div &gt; section &gt; ol &gt; li:nth-child(1) &gt; div &gt; div &gt; div.ui-search-result__content-wrapper &gt; div.ui-search-item__group.ui-search-item__group--title &gt; a.ui-search-item__group__element.ui-search-link &gt; h2'.</msg>
+<status status="PASS" starttime="20210930 21:12:21.552" endtime="20210930 21:12:22.809"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210930 21:12:22.809" endtime="20210930 21:12:22.869"/>
+</kw>
+<status status="PASS" starttime="20210930 21:12:21.551" endtime="20210930 21:12:22.869"/>
+</kw>
+<status status="PASS" starttime="20210930 21:12:12.135" endtime="20210930 21:12:22.869"/>
+</test>
+<status status="PASS" starttime="20210930 21:12:12.029" endtime="20210930 21:12:22.870"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="MercadoLivre">MercadoLivre</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
