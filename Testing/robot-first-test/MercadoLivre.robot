@@ -2,6 +2,7 @@
 library  SeleniumLibrary
 
 *** Variables ***
+${BROWSER}  chrome
 
 *** Test Cases ***
 Mercado Livre
@@ -11,7 +12,7 @@ Mercado Livre
 
 *** Keywords ***
 Acessar o site do Mercado Livre
-  Open Browser  http://mercadolivre.com.br  chrome
+  Open Browser  http://mercadolivre.com.br  ${Browser}
 
 Fazer uma busca por iPhone12
   Input Text  css=body > header > div > form > input  Iphone 12
