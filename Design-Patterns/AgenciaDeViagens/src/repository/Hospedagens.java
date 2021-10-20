@@ -1,7 +1,6 @@
 package repository;
 
 import models.Hospedagem;
-import models.Voo;
 
 import java.util.ArrayList;
 import java.util.List;
