@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="653a750b-c01b-4e33-aead-00f76b399603" name="Changes" comment="" />
+    <list default="true" id="653a750b-c01b-4e33-aead-00f76b399603" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/Log4d-intro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/Log4d-intro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/avisos.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../H2-Intro/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../H2-Intro/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Integradora-11/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Integradora-11/avisos.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Integradora-11/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Integradora-11/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Integradora-11/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Integradora-11/src/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/avisos.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mesa-de-trabalho-integradora-12/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mesa-de-trabalho-integradora-12/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Front-End-iii/LandingPage" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Front-End-iii/LandingPage" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="20BxEtRXWIErf3oTKYsvL2HrmYZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="mesa-de-trabalho-integradora-12" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -27,5 +77,20 @@
       <updated>1635531676086</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

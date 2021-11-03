@@ -1,0 +1,43 @@
+[2021-10-28 11:10:23] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:10:23] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:11:33] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:11:33] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:12:58] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:12:58] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:12:58] [ WARN ] [App:16] Aviso
+[2021-10-28 11:16:48] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:16:48] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:16:48] [ WARN ] [App:16] Aviso
+[2021-10-28 11:19:44] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:19:44] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:19:44] [ WARN ] [App:16] Aviso
+[2021-10-28 11:22:25] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:22:25] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:22:25] [ WARN ] [App:16] Aviso
+[2021-10-28 11:22:34] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:22:34] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:22:34] [ WARN ] [App:16] Aviso
+[2021-10-28 11:22:47] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 11:22:47] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 11:22:47] [ WARN ] [App:16] Aviso
+[2021-10-28 12:20:20] [ INFO ] [App:9] Iniciando com log4j
+[2021-10-28 12:20:20] [ ERROR] [App:14] Impossivel dividir por zero.
+java.lang.ArithmeticException: / by zero
+	at App.main(App.java:12)
+[2021-10-28 12:20:20] [ WARN ] [App:16] Aviso
