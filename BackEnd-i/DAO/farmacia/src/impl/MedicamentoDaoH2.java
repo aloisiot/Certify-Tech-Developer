@@ -34,8 +34,6 @@ public class MedicamentoDaoH2 implements IDao<Medicamento>{
 
             if(keys.next()){
                 medicamento.setId(keys.getInt(1));
-                statement.close();
-                c.close();
             }
         }
         catch (SQLException e){

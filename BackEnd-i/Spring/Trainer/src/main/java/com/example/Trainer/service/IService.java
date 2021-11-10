@@ -4,7 +4,7 @@ import com.example.Trainer.model.Trainer;
 
 import java.util.List;
 
-public interface ITreinerService {
+public interface IService {
 
-    List<Trainer> trainer();
+    List<Trainer> getList();
 }

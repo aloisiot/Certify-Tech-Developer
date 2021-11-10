@@ -5,20 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="653a750b-c01b-4e33-aead-00f76b399603" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/Log4d-intro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/Log4d-intro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/avisos.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Log4j/Log4d-intro/src/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../H2-Intro/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../H2-Intro/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Integradora-11/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Integradora-11/avisos.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Integradora-11/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Integradora-11/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Integradora-11/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Integradora-11/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/MesaDeTrabalho.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/contatos.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/MesaDeTrabalho/src/model/Contato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/intro-a-serializacao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/output-file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../serializacao/intro-a-serializacao/src/model/Cachorro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/farmacia/src/impl/MedicamentoDaoH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/farmacia/src/impl/MedicamentoDaoH2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/avisos.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mesa-de-trabalho-integradora-12/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mesa-de-trabalho-integradora-12/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Front-End-iii/LandingPage" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Front-End-iii/LandingPage" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
