@@ -12,8 +12,6 @@ export default class App extends Component {
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
-
-    this.opjectToArray = this.opjectToArray.bind(this);
   }
 
   async handleSubmit({ cep }) {
@@ -30,16 +28,6 @@ export default class App extends Component {
         })
       }
     }
-  }
-  
-
-  opjectToArray(object){
-    let result = [];
-
-    for(let key in object){
-      result.push([key, object[key]])
-    }
-    return result;
   }
 
   render() {
