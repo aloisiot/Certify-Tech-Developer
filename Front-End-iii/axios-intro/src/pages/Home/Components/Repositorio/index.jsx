@@ -1,15 +1,5 @@
-import { Component } from "react";
+import { Link } from "react-router-dom";
 
-export default class Repositorio extends Component{
-    render(){
-        return(
-        <>
-            <li key={this.props.id}>
-                <a target="_blank" href={this.props.html_url} rel="noreferrer">
-                    {this.props.name}
-                </a>
-            </li>
-        </>
-        );
-    }
+export default function Repositorio ({id, fullName, name}) {
+    return <li key={id}> <Link to={fullName}> {name} </Link> </li>;
 }
