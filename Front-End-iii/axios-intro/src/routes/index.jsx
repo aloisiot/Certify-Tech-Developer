@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Hello from '../pages/Hello';
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound';
+import OwnerDetails from '../pages/OwnerDetails';
 import Repository from '../pages/Repository';
 
 export default function RouteList(){
@@ -15,6 +16,7 @@ export default function RouteList(){
             <Routes>
                 <Route path="/" element={ <Home/> } />
                 <Route path="/hello" element={ <Hello/> } />
+                <Route path="/owner/:userName" element={ <OwnerDetails/> } />
                 <Route path="/:repositoryOwner/:repositoryName" element={ <Repository/> } />
                 <Route path="*" element={<NotFound/>}/>
             </Routes>

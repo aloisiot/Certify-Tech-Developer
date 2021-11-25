@@ -36,8 +36,8 @@ export default class Home extends Component {
       <>
         <main>
           <div className="col-md-4 offset-md-4 col-sm-8 offset-sm-2 my-3 container text-center">
-            <h1>Brasil API</h1>
-            <Link to="/brasil_api"> Via CEP </Link>
+            <h1> Via CEP </h1>
+            <Link to="/brasil_api">Brasil API</Link>
             <h2 className="my-5">Procure informaçoes relacionadas a um CEP</h2>
             <Formik initialValues={{ cep: '' }} onSubmit={this.handleSubmit}>
               <Form>

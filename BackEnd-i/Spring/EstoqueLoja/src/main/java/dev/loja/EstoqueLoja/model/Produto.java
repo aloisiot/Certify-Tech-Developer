@@ -1,13 +1,11 @@
 package dev.loja.EstoqueLoja.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Entity
+@Table(name = "tb_produto")
 public class Produto {
 
     @Id
@@ -20,7 +18,6 @@ public class Produto {
     @Size(min = 5)
     private String descricao;
 
-    @NotEmpty
     private long quantidade;
 
     public long getId() {

@@ -1,4 +1,4 @@
-package dev.escola.escola.entity;
+package dev.escola.escola.model;
 
 import javax.persistence.*;
 import java.util.ArrayList;
