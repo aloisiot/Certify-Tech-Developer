@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router"
+import { Helmet } from 'react-helmet';
 
 export default function NotFound(){
 
@@ -20,6 +21,9 @@ export default function NotFound(){
 
     return (
         <>
+        <Helmet>
+        <title>Not Found</title>
+        </Helmet>
             <h1>404 - Not Found</h1>
             <h2>Aguarde: {count}</h2>
         </>

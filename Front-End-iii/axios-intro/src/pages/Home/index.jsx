@@ -4,6 +4,8 @@ import Swal from 'sweetalert2';
 import api from '../../service/api';
 import Repositorio from './Components/Repositorio';
 import { Link } from 'react-router-dom';
+import { ListGroup } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
   const [repositorios, setRepositorios] = useState([]);
@@ -12,6 +14,7 @@ export default function Home() {
     if (nomeUsuario) {
       try {
         const response = await api.get(`users/${nomeUsuario}/repos`);
+        console.log(response.data)
         setRepositorios(response.data);
       } catch (error) {
         Swal.fire({
@@ -23,29 +26,34 @@ export default function Home() {
     }
   }
 
-    return (
+  return (
     <main>
-        <Link to="/hello">Hello</Link>
-        <div className="col-md-4 offset-md-4 col-sm-8 offset-sm-2 my-3 container text-center">
+      <Helmet>
+        <title>
+          Home {repositorios.length > 0 ? "| " + repositorios[0].owner.login : ""}
+        </title>
+      </Helmet>
+      <Link to="/hello">Hello</Link>
+      <div className="col-md-4 offset-md-4 col-sm-8 offset-sm-2 my-3 container text-center">
         <h2>Procure um usuário do Github</h2>
         <Formik initialValues={{ nomeUsuario: '' }} onSubmit={handleSubmit}>
-            <Form>
+          <Form>
             <Field placeholder="Insira o nome do usuário" required type="text" name="nomeUsuario" id="nomeUsuario" className="form-control" />
             <button className="btn btn-primary my-4" type="submit">Pesquisar</button>
-            </Form>
+          </Form>
         </Formik>
         {repositorios.length > 0 && (
-            <>
-            <ul>
-                {repositorios.map(({ id, name, html_url, full_name }) => {
+          <>
+            <ListGroup as="ul">
+              {repositorios.map(({ id, name, html_url, full_name }) => {
                 return (
-                    <Repositorio id={id} name={name} fullName={full_name}/>
+                  <Repositorio id={id} name={name} fullName={full_name} />
                 );
-                })}
-            </ul>
-            </>
+              })}
+            </ListGroup>
+          </>
         )}
-        </div>
+      </div>
     </main>
-    );
+  );
 }

@@ -1,25 +1,26 @@
 import { Field, Form, Formik } from "formik";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useCallback, useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router";
+import { Container, Col, Row, ListGroup } from "react-bootstrap";
 import Swal from "sweetalert2";
 import api from "../../service/api";
 
 const OwnerDetails = () => {
     const [owner, setOwner] = useState({});
-    const{ userName } = useParams();
+    const { userName } = useParams();
+    const navigate = useNavigate();
 
-    useEffect(() => {
-        if(userName){
-            getOwnerData({_uName: userName});
-            console.log(owner)
-        }
-    }, [userName])
-
-    const getOwnerData = async ({ _uName }) => {
+    const getOwnerData = useCallback(async ({ _uName }) => {
         const uName = _uName ? _uName : userName;
+        if (uName !== _uName) {
+            navigate(`/owner/${_uName}`);
+            return;
+        }
+
         try {
             const response = await api.get(`users/${uName}`);
             setOwner(response.data);
+            console.log(response)
         } catch (error) {
             Swal.fire({
                 timer: error.response.status,
@@ -27,27 +28,34 @@ const OwnerDetails = () => {
                 text: error.response.message
             });
         }
-    }
-    
-    return (
-        <>
-            <div className="col-md-4 col-sm-6 my-3 container text-center">
-                <h1>Procure um usuário do gitHub para ver suas informações</h1>
-                <Formik initialValues={{ _uName: "" }} onSubmit={getOwnerData}>
-                    <Form>
-                        <Field placeholder="Nome do usuário GitHub" require type="text" name="_uName" id="_uName" className="form-control" />
-                        <button className="btn btn-primary my-3" type="submit">Enviar</button>
-                    </Form>
-                </Formik>
-                {owner.name  && (
-                    <div>
-                        <img src={owner.avatar_url} alt="img perfil" />
-                        <p>Nome de usuário: {owner.login}</p>
+    }, [userName, navigate])
 
-                    </div>
-                )}
-            </div>
-        </>
+    useEffect(() => {
+        if (userName) {
+            getOwnerData({ _uName: userName });
+        }
+    }, [userName, getOwnerData])
+
+    return (
+        <section>
+            <Container>
+                <Col md={{ span: 4, offset: 4 }} sm={{ span: 6, offset: 3 }}>
+                    <h1>Procure um usuário do gitHub para ver suas informações</h1>
+                    <Formik initialValues={{ _uName: "" }} onSubmit={getOwnerData}>
+                        <Form>
+                            <Field placeholder="Nome do usuário GitHub" require type="text" name="_uName" id="_uName" className="form-control" />
+                            <button className="btn btn-primary my-3" type="submit">Enviar</button>
+                        </Form>
+                    </Formik>
+                    {owner && (
+                        <div>
+                            <img src={owner.avatar_url} alt="img perfil" />
+                            <p>Nome de usuário: {owner.login}</p>
+                        </div>
+                    )}
+                </Col>
+            </Container>
+        </section>
     );
 }
 
