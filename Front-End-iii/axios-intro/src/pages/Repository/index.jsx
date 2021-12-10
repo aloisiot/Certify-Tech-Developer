@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Swal from "sweetalert2";
 import api from '../../service/api'
+import { Helmet } from "react-helmet";
 
 export default function Repository() {
     const { repositoryOwner, repositoryName } = useParams();
@@ -13,7 +14,6 @@ export default function Repository() {
         async function fetchData() {
             try {
                 const response = await api.get(`repos/${repositoryOwner}/${repositoryName}`)
-                console.log(response.data)
                 setRepo(response.data);
             } catch (err) {
                 Swal.fire({
@@ -29,6 +29,9 @@ export default function Repository() {
 
     return (
         <>
+            <Helmet>
+                <title> Repositório {repo.name ? "| " + repo.name : ""} </title>
+            </Helmet>
             {repo.name && (
                 <ul>
                     <li>Nome: {repo.name}</li>

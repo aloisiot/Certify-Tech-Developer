@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router";
 import { Container, Col } from "react-bootstrap";
 import Swal from "sweetalert2";
 import api from "../../service/api";
+import { Helmet } from "react-helmet";
 
 const OwnerDetails = () => {
     const [owner, setOwner] = useState({});
@@ -38,6 +39,9 @@ const OwnerDetails = () => {
 
     return (
         <section>
+            <Helmet>
+            <title> {owner.login ? owner.login : ""} </title>
+            </Helmet>
             <Container>
                 <Col md={{ span: 4, offset: 4 }} sm={{ span: 6, offset: 3 }}>
                     <h1>Procure um usuário do gitHub para ver suas informações</h1>

@@ -45,9 +45,9 @@ export default function Home() {
         {repositorios.length > 0 && (
           <>
             <ListGroup as="ul">
-              {repositorios.map(({ id, name, html_url, full_name }) => {
+              {repositorios.map(({ id, name, html_url, full_name }, i) => {
                 return (
-                  <Repositorio id={id} name={name} fullName={full_name} />
+                  <Repositorio key={i} id={id} name={name} fullName={full_name} />
                 );
               })}
             </ListGroup>
